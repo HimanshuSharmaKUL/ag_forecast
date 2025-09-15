@@ -1,1 +1,1 @@
-# Agriculture commodity valatility prediction
+# Agriculture commodity volatility prediction
