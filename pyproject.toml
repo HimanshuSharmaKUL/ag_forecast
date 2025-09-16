@@ -1,0 +1,18 @@
+[project]
+name = "agri-forecast"
+version = "0.1.0"
+dependencies = [
+  "python-dotenv",
+  "pandas>=2.0",
+  "numpy",
+  "scikit-learn",
+  "yfinance",
+  "matplotlib",
+  "uvicorn",
+  "fastapi",
+  "joblib",
+  "dash",
+"plotly",
+"requests",
+"dash-bootstrap-components"
+]
