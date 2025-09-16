@@ -14,5 +14,7 @@ dependencies = [
   "dash",
 "plotly",
 "requests",
-"dash-bootstrap-components"
+"dash-bootstrap-components",
+"pyarrow",
+"fastparquet"
 ]

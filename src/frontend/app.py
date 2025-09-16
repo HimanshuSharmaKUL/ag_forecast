@@ -133,4 +133,4 @@ def refresh_graph(_n=None):
     return fig
 
 if __name__ == "__main__":
-    app.run_server(debug=True, host="127.0.0.1", port=8050)
+    app.run(debug=True, host="127.0.0.1", port=8050)

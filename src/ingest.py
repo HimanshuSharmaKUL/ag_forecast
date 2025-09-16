@@ -8,7 +8,8 @@ def fetch_yahoo(ticker: str, start: str) -> pd.DataFrame:
     df["ticker"] = ticker
     df = df.reset_index()
     df = df.rename(columns=str.lower)
-    df = df.iloc[1:]
+    df.columns = [col[0] for col in df.columns] #caution: multiindex header ko single index header me convert kiya hai
+    
     
     return df[["date", "ticker", "open", "high", "low", "close", "adj close", "volume"]]
 

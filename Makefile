@@ -1,10 +1,10 @@
 .PHONY: setup ingest features train evaluate serve
 
-VENV_PY=.\.venv\Scripts\python
-VENV_PIP=.\.venv\Scripts\pip
+VENV_PY=.\.venv\Scripts\python.exe
+VENV_PIP=.\.venv\Scripts\pip.exe
 
 setup:
-	python -m venv .venv && $(VENV_PY) && pip install -U pip && \
+	python -m venv .venv && $(VENV_PY) -m pip install -U pip && \
 	$(VENV_PIP) install -e .
 
 ingest:
